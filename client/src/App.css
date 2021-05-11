@@ -1,10 +1,11 @@
 html, body {
   overflow-x: hidden;
   overflow-y: visible !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -47,7 +48,7 @@ html, body {
   padding-top: 110px;
   margin-top: -200px;
   background-color: lightgray;
-  height: 1000px;
+  bottom: 0;
   width: 90px;
 }
 
@@ -108,7 +109,131 @@ html, body {
   margin-left: -50px;
 }
 
+.content-outside {
+  margin-top: -50px;
+  margin-left: -20px;
+  width: 90%;
+}
 
+.top-card {
+  margin-top: 8%;
+}
+
+@media screen and (max-width: 1000px) {
+  .card-box {
+    box-shadow: none !important;
+  }
+  
+  .box-title {
+    margin-left: 6%;
+    font-weight: 300 !important;
+    font-size: smaller!important;
+    color: rgb(94, 94, 94);
+  }
+
+  .engagement-row {
+    margin-left: 5px !important;
+    margin-bottom: -30px !important;
+  }
+
+  .top-card {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .nn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .content-outside {
+    width: 85%
+  }
+  .mn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-outside {
+    margin-left: 0px !important;
+    width: 100%
+  }
+  .app {
+    padding-bottom: 100px;
+  }
+}
+
+.title-row {
+  font-weight: 100 !important;
+  margin-left: 2%;
+}
+
+.subtitle-row {
+  margin-left: 4%;
+  margin-top: 1%;
+  font-size: smaller;
+  color: rgb(94, 94, 94);
+}
+
+.card-box {
+  box-shadow: 1px 1px 2px 2px gray;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.box-title {
+  font-weight: 900;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.notif-icon {
+  color: black !important;
+  height: 40px;
+  width: 35px !important;
+}
+
+.engagement-icon {
+  color: black !important;
+  height: 40px;
+  width: 35px !important;
+  margin-left: -15px !important;
+}
+
+.notif-outside {
+  margin-left: 5%;
+}
+
+.notif-text {
+  padding-top: 2px;
+  font-size: 12px;
+}
+
+.btn-notif {
+  background-color: blueviolet;
+  color: white;
+  width: 80%;
+  margin-left: -20px;
+  height: 30px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+.btn-shout {
+  background-color: blueviolet;
+  color: white;
+  width: 80%;
+  height: 30px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 5px;
+  margin-top: 3px;
+}
 
 
 @media screen and (max-width: 600px) {
