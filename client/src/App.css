@@ -4,10 +4,33 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* footer */
+
 .footer {
   position: fixed;
   bottom: 0;
 }
+
+@media screen and (max-width: 600px) {
+
+  .footer {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+
+  .footer {
+    display: none;
+  }
+
+}
+
+/* Header */
 
 .navbar {
   background-color: rgb(190, 33, 54);
@@ -37,6 +60,50 @@ html, body {
   padding-top: 25px;
 }
 
+.innerSlant {
+  width: 100%;
+  height: 80px;
+  margin-top: -90px;
+  margin-left: 20px;
+  background-color: rgb(190, 33, 54);
+  transform:rotate(4deg);
+  z-index: 2 !important;
+}
+
+.outerSlant {
+  width: 100%;
+  height: 100px;
+  margin-top: -70px;
+  margin-left: 20px;
+  background-color: rgb(110, 14, 27);
+  transform:rotate(5deg);
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .innerSlant {
+    width: 100%;
+    height: 90px;
+    margin-top: -100px;
+    margin-left: 20px;
+    background-color: rgb(190, 33, 54);
+    transform:rotate(4deg);
+    z-index: 2 !important;
+  }
+  
+  .outerSlant {
+    width: 100%;
+    height: 100px;
+    margin-top: -80px;
+    margin-left: 20px;
+    background-color: rgb(110, 14, 27);
+    transform:rotate(7deg);
+    z-index: 1;
+  }
+}
+
+/* NavBar Side */
+
 .nav-block {
   background-color: lightgray;
   border-bottom: 1px solid darkgrey;
@@ -58,29 +125,15 @@ html, body {
   margin: 15px 1px 5px 1px;
 }
 
-.innerSlant {
-  width: 100%;
-  height: 80px;
-  margin-top: -90px;
-  margin-left: 20px;
-  background-color: rgb(190, 33, 54);
-  transform:rotate(4deg);
-  z-index: 2 !important;
+@media screen and (max-width: 600px) {
+  
+  .nav-block-col {
+    display: none;
+  }
+
 }
 
-.outerSlant {
-  width: 100%;
-  height: 100px;
-  margin-top: -70px;
-  margin-left: 20px;
-  background-color: rgb(110, 14, 27);
-  transform:rotate(5deg);
-  z-index: 1;
-}
-
-/* .nav-block-mobile {
-  marg
-} */
+/* NavBar Mobile */
 
 .nav-block-mobile {
   background-color: lightgray;
@@ -102,68 +155,12 @@ html, body {
   width: 25px !important;
 }
 
-.user-icon {
-  width: 40px !important;
-  height: 40px;
-  margin-top: 15px;
-  margin-left: -50px;
-}
+/* Content */
 
 .content-outside {
   margin-top: -50px;
   margin-left: -20px;
   width: 90%;
-}
-
-.top-card {
-  margin-top: 8%;
-}
-
-@media screen and (max-width: 1000px) {
-  .card-box {
-    box-shadow: none !important;
-  }
-  
-  .box-title {
-    margin-left: 6%;
-    font-weight: 300 !important;
-    font-size: smaller!important;
-    color: rgb(94, 94, 94);
-  }
-
-  .engagement-row {
-    margin-left: 5px !important;
-    margin-bottom: -30px !important;
-  }
-
-  .top-card {
-    margin-top: 5px;
-  }
-}
-
-@media screen and (min-width: 680px) {
-  .nn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .content-outside {
-    width: 85%
-  }
-  .mn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .content-outside {
-    margin-left: 0px !important;
-    width: 100%
-  }
-  .app {
-    padding-bottom: 100px;
-  }
 }
 
 .title-row {
@@ -178,33 +175,18 @@ html, body {
   color: rgb(94, 94, 94);
 }
 
-.card-box {
-  box-shadow: 1px 1px 2px 2px gray;
-  margin-bottom: 5%;
-  border-radius: 10px;
+.top-card {
+  margin-top: 8%;
 }
 
-.box-title {
-  font-weight: 900;
-  font-size: 15px;
-  margin-top: 15px;
+.notif-outside {
+  margin-left: 5%;
 }
 
 .notif-icon {
   color: black !important;
   height: 40px;
   width: 35px !important;
-}
-
-.engagement-icon {
-  color: black !important;
-  height: 40px;
-  width: 35px !important;
-  margin-left: -15px !important;
-}
-
-.notif-outside {
-  margin-left: 5%;
 }
 
 .notif-text {
@@ -235,46 +217,87 @@ html, body {
   margin-top: 3px;
 }
 
+.card-box {
+  box-shadow: 1px 1px 2px 2px gray;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
 
-@media screen and (max-width: 600px) {
-  .innerSlant {
-    width: 100%;
-    height: 90px;
-    margin-top: -100px;
-    margin-left: 20px;
-    background-color: rgb(190, 33, 54);
-    transform:rotate(4deg);
-    z-index: 2 !important;
+.box-title {
+  font-weight: 900;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.engagement-icon {
+  color: black !important;
+  height: 40px;
+  width: 35px !important;
+  margin-left: -15px !important;
+}
+
+.user-icon {
+  width: 40px !important;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: -50px;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .card-box {
+    box-shadow: none !important;
   }
   
-  .outerSlant {
-    width: 100%;
-    height: 100px;
-    margin-top: -80px;
-    margin-left: 20px;
-    background-color: rgb(110, 14, 27);
-    transform:rotate(7deg);
-    z-index: 1;
+  .box-title {
+    margin-left: 6%;
+    font-weight: 300 !important;
+    font-size: smaller!important;
+    color: rgb(94, 94, 94);
   }
 
-  .nav-block-col {
+  .engagement-row {
+    margin-left: 5px !important;
+    margin-bottom: -30px !important;
+  }
+
+  .top-card {
+    margin-top: 5px;
+  }
+
+}
+
+@media screen and (min-width: 680px) {
+
+  .nn {
     display: none;
   }
 
-  .footer {
-    width: 100%;
-    overflow: hidden;
-    padding-left: 5px;
-    padding-right: 10px;
+}
+
+@media screen and (max-width: 680px) {
+
+  .content-outside {
+    width: 85%
+  }
+  .mn {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .content-outside {
+    margin-left: 0px !important;
+    width: 100%
+  }
+  .app {
+    padding-bottom: 100px;
   }
 
   .users {
     display: none;
   }
-}
 
-@media screen and (min-width: 600px) {
-  .footer {
-    display: none;
-  }
 }

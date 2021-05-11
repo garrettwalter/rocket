@@ -9,7 +9,7 @@ const Navbar = (props) => {
         <nav className="navbar-outside sticky-top">
             <div className="row navbar">
                 <div className="col-1 text-center text-light">
-                 <FontAwesomeIcon icon={faUsers} className="text-light icon users"/>
+                    <FontAwesomeIcon icon={faUsers} className="text-light icon users"/>
                 </div>
                 <div className="col-10 navbar-text-row">
                     <div className="row">
@@ -20,17 +20,12 @@ const Navbar = (props) => {
                     </div>
                 </div>
                 <div className="col-1 text-center text-light">
-                <FontAwesomeIcon icon={faUserCircle} className="text-light user-icon"/>
+                    <FontAwesomeIcon icon={faUserCircle} className="text-light user-icon"/>
                 </div>
             </div>
-            <div className="outerSlant">
-                
-            </div>
-            <div className="innerSlant">
-                
-            </div>
+            <div className="outerSlant"></div>
+            <div className="innerSlant"></div>
         </nav>
-        
     );
 }
 

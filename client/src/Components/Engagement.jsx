@@ -10,8 +10,7 @@ const Engagement = (props) => {
             </div>
             <div className="col-9">
                 <p className="notif-text"><strong>{props.name}</strong> {props.text}</p>
-            </div>
-            
+            </div> 
         </div>
     );
 }
