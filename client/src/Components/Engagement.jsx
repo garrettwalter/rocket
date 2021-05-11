@@ -9,7 +9,7 @@ const Engagement = (props) => {
                 <FontAwesomeIcon icon={faUserCircle} className="text-light engagement-icon"/>
             </div>
             <div className="col-9">
-                <p className="notif-text">John Doe did something on 5/10/21 that caused you to get a notification.</p>
+                <p className="notif-text"><strong>{props.name}</strong> {props.text}</p>
             </div>
             
         </div>

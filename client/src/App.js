@@ -54,26 +54,26 @@ const App = (props) => {
                 <p>Check-ins</p>
               </div>
               <div className="row">
-                <Notif/>
-                <Notif/>
-                <Notif/>
-                <Notif/>
+                <Notif name="Sam Smith" text="checked in today, view the check-in and respond."/>
+                <Notif name="John Doe" text="checked in on 4/12/2020, view the check-in and respond."/>
+                <Notif name="Jane Doe" text="checked in on 4/11/2020, view the check-in and respond."/>
+                <Notif name="Sam Smith" text="checked in on 4/9/2020, view the check-in and respond."/>
               </div>
               <div className="row subtitle-row">
                 <p>Overdue Actions</p>
               </div>
               <div className="row">
-                <Notif/>
-                <Notif/>
+                <Notif name="Jane Doe" text="has an action that is passed due."/>
+                <Notif name="John Doe" text="has an action that is passed due."/>
               </div>
               <div className="row subtitle-row">
                 <p>Completed Activities</p>
               </div>
               <div className="row">
-                <Notif/>
-                <Notif/>
-                <Notif/>
-                <Notif/>
+                <Notif name="Sam Smith" text="completed an action, view and rate the action that was completed."/>
+                <Notif name="John Doe" text="completed an action, view and rate the action that was completed."/>
+                <Notif name="Jane Doe" text="completed an action, view and rate the action that was completed."/>
+                <Notif name="Sam Smith" text="completed an action, view and rate the action that was completed."/>
               </div>
             </div>
             <div className="col-lg-5">
@@ -82,9 +82,9 @@ const App = (props) => {
                   <p className="box-title">Success Engagement's</p>
                 </div>
                 <div className="row engagement-row">
-                <Engagement/>
-                <Engagement/>
-                <Engagement/>
+                <Engagement name="Sam Smith" text="has not had a success engagement conversation in over 5 weeks."/>
+                <Engagement name="Jane Doe" text="has had a success engagement conversation today."/>
+                <Engagement name="John Doe" text="has not had a success engagement conversation in over 6 weeks."/>
               </div>
               </div>
               <div className="row card-box">
@@ -92,11 +92,11 @@ const App = (props) => {
                   <p className="box-title">Shout-out's</p>
                 </div>
                 <div className="row engagement-row">
-                <ShoutOut/>
-                <ShoutOut/>
-                <ShoutOut/>
-                <ShoutOut/>
-                <ShoutOut/>
+                <ShoutOut name="Sam Smith" text="shouted out to" to="Jane Doe"/>
+                <ShoutOut name="Jane Doe" text="shouted out to" to="Sam Smith"/>
+                <ShoutOut name="John Doe" text="shouted out to" to="Jane Doe"/>
+                <ShoutOut name="Jane Doe" text="shouted out to" to="You"/>
+                <ShoutOut name="John Doe" text="shouted out to" to="You"/>
               </div>
               </div>
             </div>

@@ -9,7 +9,7 @@ const Notif = (props) => {
                 <FontAwesomeIcon icon={faUserCircle} className="text-light notif-icon"/>
             </div>
             <div className="col-7">
-                <p className="notif-text">John Doe did something on 5/10/21 that caused you to get a notification.</p>
+                <p className="notif-text"><strong>{props.name}</strong> {props.text}</p>
             </div>
             <div className="col-4">
                 <button className=" btn-notif">view</button>
